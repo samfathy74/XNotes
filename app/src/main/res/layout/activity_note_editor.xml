@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xnotes.NoteEditorActivity">
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="start|top"
+        android:hint="Write title"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:fontFamily="@font/baloo"
+        android:maxLength="20"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/colorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.example.xnotes.classes.LinedEditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:background="@null"
+        android:fontFamily="@font/baloo"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:hint="Write note..."
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
